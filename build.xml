@@ -3,7 +3,7 @@
 <property name="jarf" value="installer/bin"/>
 
 
-<target name="compile">
+<target name="compile" depends="clean">
 <mkdir dir="${clsf}"/>
 
 <javac srcdir="src" destdir="${clsf}"/>

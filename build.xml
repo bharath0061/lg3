@@ -13,6 +13,15 @@
 <!-- <mkdir dir="${jarf}"/> -->
 <jar basedir="${clsf}" destfile="${jarf}/bbkr.jar"/>
 </target>
+
+<!--
+
+<target name="warfile">
+<war destfile="hello_world.jar" basedir="${jarf}"/>
+</target>
+
+-->
+
 <target name="clean">
  <delete dir="build"/>
  <delete dir="installer"/>

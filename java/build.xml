@@ -1,0 +1,21 @@
+<project name="google" default="package">
+<property name="clsf" value="build/class"/>
+<property name="jarf" value="installer/bin"/>
+
+
+<target name="compile">
+<mkdir dir="${clsf}"/>
+
+<javac srcdir="src" destdir="${clsf}"/>
+</target>
+
+<target name="package" depends="compile">
+<!-- <mkdir dir="${jarf}"/> -->
+<jar basedir="${clsf}" destfile="${jarf}/bbkr.jar"/>
+</target>
+<target name="clean">
+ <delete dir="build"/>
+ <delete dir="installer"/>
+</target>
+
+</project>

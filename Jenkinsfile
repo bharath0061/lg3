@@ -1,5 +1,8 @@
 pipeline {
 	agen any
+		triggers {
+			githubPush()
+		}
 	stages {
 		stage("build") {
 			steps {
